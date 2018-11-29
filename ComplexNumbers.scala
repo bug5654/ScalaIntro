@@ -3,8 +3,8 @@ class Complex(real: Double, complex: Double) {
 	// def j() = complex
 	def re = real
 	def j = complex
-	override def toString() = "" + (if (re != 0) {re+" "} else "") + (if (j < 0 || re ==0) "" else " + ") + j + "j" 
-	//would create sign() function to align negatives properly but simple example
+	override def toString() = "" + (if (re != 0) {re+" "} else "") + (if (j < 0 || re ==0) "" else "+ ") + j + "j" 
+	//would create sign() function and use sign(j) + " " + abs(j) to align negatives properly but simple example
 }
 
 object ComplexNumbers {
